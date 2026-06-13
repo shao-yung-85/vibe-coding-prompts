@@ -24,6 +24,18 @@
 
 ---
 
+## ⚡ 怎麼用（30 秒上手）
+
+1. **找情境** — 用 `Ctrl/⌘ + F` 搜尋你現在的場景（例如「debug」「重構」「不讓 AI 亂動」），或從下方[目錄](#-目錄)點過去。
+2. **複製 prompt** — 每個 prompt 都在程式碼框裡，點右上角一鍵複製。
+3. **填空** — 把 `[方括號]` 換成你的實際內容。
+4. **貼到工具** — Claude Code / Cursor / Lovable / Bolt 都適用，貼上送出即可。
+
+> 💡 想看多個 prompt **怎麼串起來用**？看 [實戰範例](./examples/)。
+> 想一次設定好專案護欄、不用每次重貼？用 [CLAUDE.md 範本](./CLAUDE-md-template.md)。
+
+---
+
 ## 📑 目錄
 
 - [🚀 專案初始化](#-專案初始化)
@@ -1019,6 +1031,18 @@ It also includes a **tool comparison table** (Lovable / Bolt / Cursor / Claude C
 **Contributions welcome** — see **[CONTRIBUTING.md](./CONTRIBUTING.md)**. The one rule: quality over quantity. Every prompt must be copy-paste ready and explain *why* it works.
 
 Licensed under [MIT](./LICENSE).
+
+---
+
+## ⭐ 覺得有用嗎？
+
+如果這份 prompt 庫幫你少踩了幾個坑：
+
+- 給個 **Star** ⭐ — 讓更多人找得到（也是對維護的最大鼓勵）
+- **分享**給也在用 AI 寫程式的朋友
+- 有更好的 prompt？歡迎 [投稿](./CONTRIBUTING.md)，一起把這份清單養大
+
+> 你的一個 star，會讓下一個卡在 prompt 的人少繞半小時。
 
 ---
 

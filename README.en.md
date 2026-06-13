@@ -24,6 +24,18 @@ This repo collects prompts that *reliably* produce good results, as copy-paste-r
 
 ---
 
+## ⚡ How to use (30 seconds)
+
+1. **Find your scenario** — hit `Ctrl/⌘ + F` and search (e.g. "debug", "refactor", "guardrail"), or jump from the [table of contents](#-table-of-contents).
+2. **Copy the prompt** — every prompt is in a code block; click the copy button.
+3. **Fill in the blanks** — replace the `[brackets]` with your actual content.
+4. **Paste into your tool** — works with Claude Code / Cursor / Lovable / Bolt. Paste and send.
+
+> 💡 Want to see how multiple prompts chain together? See the [examples](./examples/).
+> Want to set up project guardrails once instead of re-pasting? Use the [CLAUDE.md template](./CLAUDE-md-template.md).
+
+---
+
 ## 📑 Table of Contents
 
 - [🚀 Project Initialization](#-project-initialization)
@@ -980,6 +992,18 @@ PRs welcome! New prompts, better explanations, even typo fixes — all appreciat
 > One rule: quality over quantity. We take prompts that are *genuinely useful and clearly explained*, not filler.
 
 See **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the full format spec.
+
+---
+
+## ⭐ Found this useful?
+
+If this prompt library saved you from a few pitfalls:
+
+- Drop a **Star** ⭐ — it helps others find it (and it's the best encouragement for maintenance)
+- **Share** it with friends who code with AI
+- Got a better prompt? [Contribute it](./CONTRIBUTING.md) and help grow the list
+
+> Your one star saves the next person — stuck on a prompt — half an hour.
 
 ---
 

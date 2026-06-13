@@ -22,3 +22,6 @@ Desktop.ini
 # Local env (this is a docs repo, but just in case)
 .env
 .env.local
+
+# Claude Code 專案指引（只在本機用，不發佈到 GitHub）
+/CLAUDE.md

@@ -7,3 +7,4 @@
 ## 目錄
 
 - [從零做一個待辦清單功能](./todo-feature-walkthrough.md) — 從初始化、加功能、Debug 到寫測試的完整流程
+- [🚨 翻車案例集](./ai-gone-wrong.md) — AI 亂改的真實現場,以及用哪個 prompt 救回來

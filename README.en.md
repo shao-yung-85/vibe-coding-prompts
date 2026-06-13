@@ -36,8 +36,32 @@ This repo collects prompts that *reliably* produce good results, as copy-paste-r
 
 ---
 
+## ⚡ Cheat Sheet (one-liner prompts)
+
+Don't want to scroll? These 12 one-liners are copy-paste-and-fill ready. Full versions (with "why it works") are in the categories below.
+
+| 🎯 What you want | 💬 Paste this (`[ ]` = fill in) |
+|------------------|----------------------------------|
+| New project | Don't write code yet — restate the requirements, list the folder structure, flag any concerns. I'll confirm before you start. |
+| Add a feature | Don't write yet — list which files you'll change and your plan. I'll say OK, then you build. |
+| Fix a bug | Don't change anything yet — explain the error, list the 2-3 most likely causes, and how to confirm which. |
+| Refactor | Behavior must stay identical, no new features, structure only. Explain how to confirm behavior is unchanged. |
+| Write tests | Cover edge cases (null/0/huge) and bad input; name each test for what it verifies. |
+| Tweak styling | Only change `className`/`style` — don't touch any logic, state, or event handlers. |
+| 🛡️ Stop it changing things | Use the minimal change, don't refactor/reformat/touch unrelated code; ask me before changing anything else. |
+| 🛡️ Stay in scope | You may only edit these files: `[list]`. Stop and ask before touching anything else. |
+| 🛡️ Don't guess | If anything is uncertain, stop and ask me — don't assume an answer and keep going. |
+| Explain this code | Walk through line by line what it actually does; flag side effects and edge-case failures. |
+| Write a commit | Use Conventional Commits; explain "why" in the body, not just "what" changed. |
+| Deploy failed | Find the line that actually caused the failure (not the cascade), explain it, give fix steps. |
+
+> 🛡️ = guardrails, the most effective at stopping the AI from going rogue — and what sets this repo apart from a generic prompt list.
+
+---
+
 ## 📑 Table of Contents
 
+- [🆚 Bad prompt vs good prompt](#-bad-prompt-vs-good-prompt)
 - [🚀 Project Initialization](#-project-initialization)
 - [✨ Adding Features](#-adding-features)
 - [🐛 Debugging](#-debugging)
@@ -52,6 +76,87 @@ This repo collects prompts that *reliably* produce good results, as copy-paste-r
 - [📋 CLAUDE.md Templates](#-claudemd-templates)
 - [🔧 Tool Comparison](#-tool-comparison)
 - [🤝 Contributing](#-contributing)
+
+---
+
+## 🆚 Bad prompt vs good prompt
+
+Same request, different phrasing, very different results. Once you get these pairs, you've got the principle behind every template here.
+
+**Case 1: New project**
+
+❌ Bad:
+```
+build me a todo app
+```
+✅ Good:
+```
+I want to build a todo app, stack React + TypeScript.
+Don't write code yet — restate the requirements, list the folder structure, and flag anything you're unsure about. I'll confirm before you start.
+```
+**The difference:** The bad one forces the AI to guess a pile of assumptions; the good one aligns on requirements before any code, catching misunderstandings early.
+
+---
+
+**Case 2: Fix a bug**
+
+❌ Bad:
+```
+fix this error [paste error]
+```
+✅ Good:
+```
+I'm hitting this error [paste error]. Don't change any code yet — explain what it means,
+list the 2-3 most likely causes (most to least likely), and tell me how to confirm which one.
+```
+**The difference:** The bad one makes the AI change things at random — treating symptoms, adding new bugs; the good one forces it to find the root cause.
+
+---
+
+**Case 3: Add a feature**
+
+❌ Bad:
+```
+add user login
+```
+✅ Good:
+```
+I want to add login. Don't write yet — list which files you'll add/change, your plan, and whether it affects existing features.
+I'll say OK, then build only the "enter credentials → logged in" main path first.
+```
+**The difference:** The bad one produces a pile of untested code that may touch unrelated things; the good one narrows scope and shows you the plan first.
+
+---
+
+**Case 4: Refactor (where the AI most easily overreaches)**
+
+❌ Bad:
+```
+optimize this code
+```
+✅ Good:
+```
+Refactor this code: external behavior must stay exactly the same, no new features, don't change anything on the side,
+only structure and naming. When done, explain what you did and how to confirm behavior is unchanged.
+```
+**The difference:** "Optimize" is too vague — the AI changes features, formatting, and a dozen things you didn't ask for; the good one nails down "behavior unchanged" as the iron rule.
+
+---
+
+**Case 5: Stop the AI from going rogue**
+
+❌ Bad:
+```
+while you're at it, clean up the related stuff too
+```
+✅ Good:
+```
+Solve this with the minimal change — only the lines truly necessary. Don't refactor, don't reformat,
+don't touch unrelated code. If you really want to change something else, list it and ask me first.
+```
+**The difference:** "While you're at it" is where disasters start — a small fix becomes a 100-line diff; the good one locks the scope so the diff stays small and reviewable.
+
+> 📌 The shared principle: **plan before executing ｜ narrow the scope ｜ spell out the boundaries ｜ keep your veto**. Every template below is a variation on these four.
 
 ---
 

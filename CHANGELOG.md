@@ -6,6 +6,11 @@ All notable changes to this prompt library are documented here.
 
 ## [Unreleased]
 
+### 新增 / Added
+- ⚡ 速查表:12 句「情境 → 一句話 prompt」對照,放在 README 第一屏（中英文）
+- 🆚 「爛 prompt vs 好 prompt」對照區:5 組 before/after 範例,展示背後共同原理（中英文）
+- 🚨 翻車案例集 `examples/ai-gone-wrong.md`:真實 AI 亂改情境與救回來的 prompt
+
 ## [0.2.0] - 2026-06-14
 
 ### 新增 / Added

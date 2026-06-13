@@ -1,0 +1,34 @@
+name: "📝 改善 / 回報問題 / Improve or report"
+description: "改善現有 prompt 的說明，或回報錯字、失效連結 / Improve an explanation, or report a typo / broken link"
+title: "[Improve] "
+labels: ["improvement"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 類型 / Kind
+      options:
+        - 改善現有 prompt 的說明 / Improve an explanation
+        - 現有 prompt 不好用 / An existing prompt doesn't work well
+        - 錯字 / Typo
+        - 失效連結 / Broken link
+        - 其他 / Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: 位置 / Where
+      description: 哪個檔案、哪個分類、哪個 prompt？/ Which file / category / prompt?
+      placeholder: "例如：README.md → 🐛 Debug 除錯 → 第 2 個"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 說明 / Details
+      description: 問題是什麼？建議怎麼改？/ What's the issue and your suggested fix?
+    validations:
+      required: true

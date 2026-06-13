@@ -1,0 +1,74 @@
+name: "✨ 投稿新的 Prompt / Submit a new prompt"
+description: "分享一個好用的 vibe coding prompt 模板 / Share a useful vibe coding prompt template"
+title: "[Prompt] "
+labels: ["new-prompt"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝投稿！請依下面欄位填寫。我們收的標準只有兩條：**可以直接複製貼上**、**附上為什麼有效**。
+        Thanks! Two rules for acceptance: it must be **copy-paste ready** and **explain why it works**.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分類 / Category
+      description: 這個 prompt 屬於哪一類？/ Which category does this fit?
+      options:
+        - 🚀 專案初始化 / Project Initialization
+        - ✨ 新增功能 / Adding Features
+        - 🐛 Debug 除錯 / Debugging
+        - ♻️ 重構程式碼 / Refactoring
+        - 🧪 寫測試 / Writing Tests
+        - 🎨 UI / 樣式 / UI & Styling
+        - 🗄️ 資料庫 / SQL / Database & SQL
+        - 🚢 部署 / DevOps / Deployment & DevOps
+        - 📝 寫文件 / Writing Docs
+        - 🧠 Prompt 通用心法 / General Prompting
+        - 🛡️ 護欄 Prompt / Guardrail Prompts
+        - 📋 CLAUDE.md 模板 / CLAUDE.md Templates
+        - 🆕 新分類（請在下方說明）/ New category (explain below)
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: 標題 / Title
+      description: 一句話講清楚用途 / One line stating the use case
+      placeholder: "例如：先診斷，不要急著改"
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt 本體 / The prompt
+      description: 完整、可直接複製貼上的 prompt。要填空處用 [方括號]。/ The full, paste-and-go prompt. Use [brackets] for fill-ins.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 為什麼有效 / Why it works
+      description: 2-4 句解釋原理：它觸發了 AI 的什麼行為、避開了什麼陷阱。**必填。** / 2-4 sentences on the principle. **Required.**
+    validations:
+      required: true
+
+  - type: input
+    id: tools
+    attributes:
+      label: 在哪些工具上測過？/ Tested on which tools?
+      placeholder: "例如：Claude Code, Cursor"
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認 / Confirm
+      options:
+        - label: 我已經實際用這個 prompt 測過，確認真的有用 / I've actually tested this prompt
+          required: true
+        - label: Prompt 是完整可直接貼上的，不是抽象描述 / It's paste-ready, not an abstract description
+          required: true

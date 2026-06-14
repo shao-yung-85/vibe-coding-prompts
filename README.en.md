@@ -1,6 +1,7 @@
 # 🎯 vibe-coding-prompts
 
-> A curated collection of copy-paste-ready prompt templates for **vibe coding** — each with a "why it works" explanation. Copy, paste, ship.
+> **Copy-paste prompt templates for vibe coding with Claude Code, Cursor, Lovable & Bolt.**
+> 60+ scenario-based templates, each with a "why it works" explainer — so the AI does what you meant, instead of over-refactoring, guessing, and going rogue.
 
 [![Stars](https://img.shields.io/github/stars/shao-yung-85/vibe-coding-prompts?style=flat-square)](https://github.com/shao-yung-85/vibe-coding-prompts/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
@@ -9,6 +10,10 @@
 [![Last Commit](https://img.shields.io/github/last-commit/shao-yung-85/vibe-coding-prompts?style=flat-square)](https://github.com/shao-yung-85/vibe-coding-prompts/commits/main)
 
 🇬🇧 English (this file) ・ 🇹🇼 [中文](./README.md) ・ 💡 [Examples](./examples/)
+
+**👇 Jump to:** [⚡ Cheat Sheet](#-cheat-sheet-one-liner-prompts) ・ [🛡️ Stop AI from going rogue](#️-guardrail-prompts-keep-the-ai-from-going-off-script) ・ [🆚 Bad vs good prompts](#-bad-prompt-vs-good-prompt)
+
+> ⭐ **Useful? Drop a Star** — every star helps the next dev who's losing their mind to a rogue AI find this list.
 
 ---
 

@@ -1,6 +1,7 @@
 # 🎯 vibe-coding-prompts
 
-> 收集專門給 **vibe coding** 使用的 prompt 模板，每個都附上「為什麼有效」的說明。複製、貼上、就能用。
+> **用 Claude Code、Cursor、Lovable、Bolt 寫程式時，照抄就能用的 AI prompt 模板庫。**
+> 60+ 個情境化模板，每個都附「為什麼有效」——讓 AI 照你的意思做，不再亂改、亂猜、越幫越忙。
 
 [![Stars](https://img.shields.io/github/stars/shao-yung-85/vibe-coding-prompts?style=flat-square)](https://github.com/shao-yung-85/vibe-coding-prompts/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
@@ -9,6 +10,10 @@
 [![Last Commit](https://img.shields.io/github/last-commit/shao-yung-85/vibe-coding-prompts?style=flat-square)](https://github.com/shao-yung-85/vibe-coding-prompts/commits/main)
 
 🇹🇼 中文（本檔） ・ 🇬🇧 [English](./README.en.md) ・ 💡 [實戰範例 Examples](./examples/)
+
+**👇 直接跳：** [⚡ 速查表](#-速查表一句話-prompt) ・ [🛡️ 防止 AI 亂改](#️-護欄-prompt不讓-ai-亂動) ・ [🆚 爛 vs 好 prompt](#-爛-prompt-vs-好-prompt)
+
+> ⭐ **覺得有用，先按個 Star** ——你的一顆星，會讓更多被 AI 搞瘋的人找到這份清單。
 
 ---
 
